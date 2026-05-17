@@ -6,7 +6,13 @@ import asyncio
 import random
 import time
 from utils.ai_utils import poly_image_gen, generate_image_prodia
-from prodia.constants import Model
+try:
+    from prodia.constants import Model
+    _PRODIA_AVAILABLE = True
+except ImportError:
+    _PRODIA_AVAILABLE = False
+    class Model:
+        pass
 from utils.Tools import *
 
 blacklisted_words = [
@@ -117,6 +123,10 @@ class AiStuffCog(commands.Cog):
 
         if is_nsfw and not interaction.channel.nsfw:
             await interaction.followup.send("You can create NSFW images in NSFW channels only. Please try in an appropriate channel.", ephemeral=True)
+            return
+
+        if not _PRODIA_AVAILABLE:
+            await interaction.followup.send("Image generation service is currently unavailable.", ephemeral=True)
             return
 
         model_uid = Model[model.value].value[0]

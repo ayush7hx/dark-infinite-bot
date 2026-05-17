@@ -12,7 +12,11 @@ if os.path.exists(_env_path):
                 _k, _v = _line.split('=', 1)
                 os.environ.setdefault(_k.strip(), _v.strip())
 
-import fcntl
+try:
+    import fcntl
+    _HAS_FCNTL = True
+except ImportError:
+    _HAS_FCNTL = False
 
 # ─── SINGLE INSTANCE LOCK (prevents multiple bots responding at once) ──────────
 _LOCK_FILE = '/tmp/darkinfinite_bot.lock'
@@ -20,6 +24,8 @@ _lock_fd = None
 
 def _acquire_lock():
     global _lock_fd
+    if not _HAS_FCNTL:
+        return
     _lock_fd = open(_LOCK_FILE, 'w')
     try:
         fcntl.flock(_lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -393,7 +399,7 @@ set "GROQ_API_KEY=$GroqKey"
 :: ── Check if Replit bot is already online ─────────────────────────────────
 :check_replit
 echo [%%TIME%%] Checking Replit status...
-powershell -Command "try{`$r=(Invoke-WebRequest '$BotUrl/api/stats' -UseBasicParsing -TimeoutSec 8).Content;if(`$r -match 'guilds'){exit 0}else{exit 1}}catch{exit 1}"
+powershell -Command "try{`$r=(Invoke-WebRequest '$BotUrl/api/stats' -UseBasicParsing -TimeoutSec 8).Content;if(`$r -match 'commands'){exit 0}else{exit 1}}catch{exit 1}"
 if %errorlevel%==0 (
     echo [%%TIME%%] Replit is ONLINE — standby mode. Checking again in 60s...
     timeout /t 60 /nobreak >nul
