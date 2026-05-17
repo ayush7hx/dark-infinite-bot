@@ -1,0 +1,55 @@
+====================================================
+  DARK INFINITE Bot - PC Pe Kaise Chalayein
+====================================================
+
+FOLDER KO KISI BHI PC PE COPY KARO
+====================================================
+
+WINDOWS PE CHALANE KE LIYE:
+----------------------------
+1. Is poori folder ko USB/Google Drive se PC pe copy karo
+
+2. token.txt file mein sirf apna bot TOKEN likhna:
+   (ya run_bot.bat khud puchega pehli baar)
+
+3. replit_url.txt mein apna Replit URL check karo
+   (already filled hai - change mat karo)
+
+4. run_bot.bat pe double-click karo
+   -> Bot automatically start ho jaayega!
+
+5. BOT KO WINDOWS STARTUP PE ADD KARNE KE LIYE:
+   startup_install.bat pe double-click karo
+   -> Ab jab bhi PC on hoga, bot auto-start hoga!
+
+6. Startup se hatane ke liye:
+   remove_startup.bat pe double-click karo
+
+
+LINUX/MAC PE CHALANE KE LIYE:
+------------------------------
+1. Terminal open karo
+2. cd /path/to/bot/folder
+3. chmod +x run_bot.sh
+4. ./run_bot.sh
+
+Auto-start on boot (Linux):
+   Add to /etc/rc.local or create a systemd service
+
+
+IMPORTANT NOTES:
+================
+* token.txt mein sirf token hona chahiye, kuch nahi
+* replit_url.txt already set hai - change mat karo
+* Agar Replit bot online hai: PC bot wait karega (60s)
+* Agar Replit bot offline hai: PC bot auto-start hoga
+* Dono ek saath NAHI chal sakte (Discord limitation)
+  - Jo baad mein connect karega, woh active rahega
+
+KISI AUR PC PE CHALA RAHE HO:
+==============================
+* Unhe token nahi pata hona chahiye
+* token.txt file pehle se bhar ke do
+* Sirf run_bot.bat double-click karo - done!
+
+====================================================

@@ -1,0 +1,794 @@
+{
+  "pin_pink": {
+    "id": 1499642995832655903,
+    "name": "pin_pink",
+    "animated": false,
+    "usage": "<:pin_pink:1499642995832655903>",
+    "server": "HORIZON<3",
+    "server_id": 1456507376118009939
+  },
+  "drink_cat": {
+    "id": 1499643156285882438,
+    "name": "drink_cat",
+    "animated": false,
+    "usage": "<:drink_cat:1499643156285882438>",
+    "server": "HORIZON<3",
+    "server_id": 1456507376118009939
+  },
+  "white_tl": {
+    "id": 1499643281934385212,
+    "name": "white_tl",
+    "animated": false,
+    "usage": "<:white_tl:1499643281934385212>",
+    "server": "HORIZON<3",
+    "server_id": 1456507376118009939
+  },
+  "loading": {
+    "id": 1504060522516054127,
+    "name": "loading",
+    "animated": true,
+    "usage": "<a:loading:1504060522516054127>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zwrench": {
+    "id": 1504089838410928188,
+    "name": "zwrench",
+    "animated": false,
+    "usage": "<:zwrench:1504089838410928188>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "emoji_22": {
+    "id": 1504089858111438909,
+    "name": "emoji_22",
+    "animated": false,
+    "usage": "<:emoji_22:1504089858111438909>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "handshake1": {
+    "id": 1504089878613200939,
+    "name": "handshake1",
+    "animated": false,
+    "usage": "<:handshake1:1504089878613200939>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "lock1": {
+    "id": 1504089898586472562,
+    "name": "lock1",
+    "animated": false,
+    "usage": "<:lock1:1504089898586472562>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "red_button": {
+    "id": 1504089914063720561,
+    "name": "red_button",
+    "animated": false,
+    "usage": "<:red_button:1504089914063720561>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "unlock1": {
+    "id": 1504089932145360937,
+    "name": "unlock1",
+    "animated": false,
+    "usage": "<:unlock1:1504089932145360937>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "youtube": {
+    "id": 1504089950931386430,
+    "name": "youtube",
+    "animated": false,
+    "usage": "<:youtube:1504089950931386430>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zai": {
+    "id": 1504089971315703938,
+    "name": "zai",
+    "animated": false,
+    "usage": "<:zai:1504089971315703938>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zback": {
+    "id": 1504090004836716675,
+    "name": "zback",
+    "animated": false,
+    "usage": "<:zback:1504090004836716675>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zbug": {
+    "id": 1504090023920795708,
+    "name": "zbug",
+    "animated": false,
+    "usage": "<:zbug:1504090023920795708>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zcircle1": {
+    "id": 1504090039376941136,
+    "name": "zcircle1",
+    "animated": false,
+    "usage": "<:zcircle1:1504090039376941136>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zcounting": {
+    "id": 1504090057428959273,
+    "name": "zcounting",
+    "animated": false,
+    "usage": "<:zcounting:1504090057428959273>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zdil": {
+    "id": 1504090076144074925,
+    "name": "zdil",
+    "animated": false,
+    "usage": "<:zdil:1504090076144074925>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zgarduate": {
+    "id": 1504090094427181196,
+    "name": "zgarduate",
+    "animated": false,
+    "usage": "<:zgarduate:1504090094427181196>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zlevelup": {
+    "id": 1504090110180720741,
+    "name": "zlevelup",
+    "animated": false,
+    "usage": "<:zlevelup:1504090110180720741>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zmc": {
+    "id": 1504090127570567210,
+    "name": "zmc",
+    "animated": false,
+    "usage": "<:zmc:1504090127570567210>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zms": {
+    "id": 1504090148319526982,
+    "name": "zms",
+    "animated": false,
+    "usage": "<:zms:1504090148319526982>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zpause": {
+    "id": 1504090173229633657,
+    "name": "zpause",
+    "animated": false,
+    "usage": "<:zpause:1504090173229633657>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zpin": {
+    "id": 1504090189881020568,
+    "name": "zpin",
+    "animated": false,
+    "usage": "<:zpin:1504090189881020568>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zplay": {
+    "id": 1504090207840899212,
+    "name": "zplay",
+    "animated": false,
+    "usage": "<:zplay:1504090207840899212>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zstaff": {
+    "id": 1504090223397834772,
+    "name": "zstaff",
+    "animated": false,
+    "usage": "<:zstaff:1504090223397834772>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "ztimer": {
+    "id": 1504090237893083157,
+    "name": "ztimer",
+    "animated": false,
+    "usage": "<:ztimer:1504090237893083157>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zwarning": {
+    "id": 1504091612047999058,
+    "name": "zwarning",
+    "animated": false,
+    "usage": "<:zwarning:1504091612047999058>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyrox_global": {
+    "id": 1504091628875550782,
+    "name": "zyrox_global",
+    "animated": false,
+    "usage": "<:zyrox_global:1504091628875550782>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyrox_mention": {
+    "id": 1504091647317905489,
+    "name": "zyrox_mention",
+    "animated": false,
+    "usage": "<:zyrox_mention:1504091647317905489>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyrox_search": {
+    "id": 1504091665122459739,
+    "name": "zyrox_search",
+    "animated": false,
+    "usage": "<:zyrox_search:1504091665122459739>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyrox_system": {
+    "id": 1504091680154980454,
+    "name": "zyrox_system",
+    "animated": false,
+    "usage": "<:zyrox_system:1504091680154980454>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyrox_time": {
+    "id": 1504091717761241138,
+    "name": "zyrox_time",
+    "animated": false,
+    "usage": "<:zyrox_time:1504091717761241138>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxconnection": {
+    "id": 1504091748824252578,
+    "name": "zyroxconnection",
+    "animated": false,
+    "usage": "<:zyroxconnection:1504091748824252578>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxhammer": {
+    "id": 1504091765098025071,
+    "name": "zyroxhammer",
+    "animated": false,
+    "usage": "<:zyroxhammer:1504091765098025071>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxlinks": {
+    "id": 1504091780931522641,
+    "name": "zyroxlinks",
+    "animated": false,
+    "usage": "<:zyroxlinks:1504091780931522641>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxsheild": {
+    "id": 1504091803144683562,
+    "name": "zyroxsheild",
+    "animated": false,
+    "usage": "<:zyroxsheild:1504091803144683562>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxsys": {
+    "id": 1504091822904053760,
+    "name": "zyroxsys",
+    "animated": false,
+    "usage": "<:zyroxsys:1504091822904053760>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "zyroxthunder": {
+    "id": 1504091839123165185,
+    "name": "zyroxthunder",
+    "animated": false,
+    "usage": "<:zyroxthunder:1504091839123165185>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 2",
+    "server_id": 1503964206150455357
+  },
+  "ArrowRed": {
+    "id": 1504060720684204092,
+    "name": "ArrowRed",
+    "animated": true,
+    "usage": "<a:ArrowRed:1504060720684204092>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "New_1": {
+    "id": 1504060870748278876,
+    "name": "New_1",
+    "animated": false,
+    "usage": "<:New_1:1504060870748278876>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "New_2": {
+    "id": 1504060961743437925,
+    "name": "New_2",
+    "animated": false,
+    "usage": "<:New_2:1504060961743437925>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "Red": {
+    "id": 1504061086163275826,
+    "name": "Red",
+    "animated": false,
+    "usage": "<:Red:1504061086163275826>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "RedRulesBook": {
+    "id": 1504061370327502910,
+    "name": "RedRulesBook",
+    "animated": true,
+    "usage": "<a:RedRulesBook:1504061370327502910>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "TADAA": {
+    "id": 1504061623202218045,
+    "name": "TADAA",
+    "animated": true,
+    "usage": "<a:TADAA:1504061623202218045>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "boost": {
+    "id": 1504061855092576336,
+    "name": "boost",
+    "animated": false,
+    "usage": "<:boost:1504061855092576336>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "channel": {
+    "id": 1504061873446846494,
+    "name": "channel",
+    "animated": false,
+    "usage": "<:channel:1504061873446846494>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "codebase": {
+    "id": 1504062004581896303,
+    "name": "codebase",
+    "animated": false,
+    "usage": "<:codebase:1504062004581896303>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "coded": {
+    "id": 1504062108654895205,
+    "name": "coded",
+    "animated": false,
+    "usage": "<:coded:1504062108654895205>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "delete": {
+    "id": 1504062214540099605,
+    "name": "delete",
+    "animated": false,
+    "usage": "<:delete:1504062214540099605>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "disabled1": {
+    "id": 1504062414197362800,
+    "name": "disabled1",
+    "animated": true,
+    "usage": "<a:disabled1:1504062414197362800>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "dnd": {
+    "id": 1504062767823589448,
+    "name": "dnd",
+    "animated": false,
+    "usage": "<:dnd:1504062767823589448>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "emote": {
+    "id": 1504062959180054588,
+    "name": "emote",
+    "animated": true,
+    "usage": "<a:emote:1504062959180054588>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "emote1": {
+    "id": 1504063089312792646,
+    "name": "emote1",
+    "animated": false,
+    "usage": "<:emote1:1504063089312792646>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "enabled": {
+    "id": 1504063253389639833,
+    "name": "enabled",
+    "animated": true,
+    "usage": "<a:enabled:1504063253389639833>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "files": {
+    "id": 1504063342451359795,
+    "name": "files",
+    "animated": false,
+    "usage": "<:files:1504063342451359795>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "ireeee": {
+    "id": 1504063460441325578,
+    "name": "ireeee",
+    "animated": false,
+    "usage": "<:ireeee:1504063460441325578>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "games": {
+    "id": 1504063559036829696,
+    "name": "games",
+    "animated": false,
+    "usage": "<:games:1504063559036829696>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "heart3": {
+    "id": 1504063665232412774,
+    "name": "heart3",
+    "animated": false,
+    "usage": "<:heart3:1504063665232412774>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "help": {
+    "id": 1504063912197230644,
+    "name": "help",
+    "animated": false,
+    "usage": "<:help:1504063912197230644>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "icon_browser": {
+    "id": 1504064007995260948,
+    "name": "icon_browser",
+    "animated": false,
+    "usage": "<:icon_browser:1504064007995260948>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "idle": {
+    "id": 1504064096620773476,
+    "name": "idle",
+    "animated": false,
+    "usage": "<:idle:1504064096620773476>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "index": {
+    "id": 1504064173015961640,
+    "name": "index",
+    "animated": false,
+    "usage": "<:index:1504064173015961640>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "king": {
+    "id": 1504064249067081870,
+    "name": "king",
+    "animated": false,
+    "usage": "<:king:1504064249067081870>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "loadingred": {
+    "id": 1504064439916298392,
+    "name": "loadingred",
+    "animated": true,
+    "usage": "<a:loadingred:1504064439916298392>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "mention": {
+    "id": 1504064608497832077,
+    "name": "mention",
+    "animated": true,
+    "usage": "<a:mention:1504064608497832077>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "mobile": {
+    "id": 1504064794934771712,
+    "name": "mobile",
+    "animated": true,
+    "usage": "<a:mobile:1504064794934771712>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "music": {
+    "id": 1504064982168637551,
+    "name": "music",
+    "animated": true,
+    "usage": "<a:music:1504064982168637551>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "offline": {
+    "id": 1504065165258264636,
+    "name": "offline",
+    "animated": false,
+    "usage": "<:offline:1504065165258264636>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "pc": {
+    "id": 1504066152949612675,
+    "name": "pc",
+    "animated": false,
+    "usage": "<:pc:1504066152949612675>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "reddot": {
+    "id": 1504066409880354868,
+    "name": "reddot",
+    "animated": true,
+    "usage": "<a:reddot:1504066409880354868>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "starr": {
+    "id": 1504066862189645824,
+    "name": "starr",
+    "animated": false,
+    "usage": "<:starr:1504066862189645824>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "ticket1": {
+    "id": 1504066880875401227,
+    "name": "ticket1",
+    "animated": false,
+    "usage": "<:ticket1:1504066880875401227>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "warning1": {
+    "id": 1504066901050003467,
+    "name": "warning1",
+    "animated": false,
+    "usage": "<:warning1:1504066901050003467>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "wrench1": {
+    "id": 1504066918363955292,
+    "name": "wrench1",
+    "animated": false,
+    "usage": "<:wrench1:1504066918363955292>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zArrow": {
+    "id": 1504066962651615392,
+    "name": "zArrow",
+    "animated": false,
+    "usage": "<:zArrow:1504066962651615392>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zCloud": {
+    "id": 1504085911590277171,
+    "name": "zCloud",
+    "animated": false,
+    "usage": "<:zCloud:1504085911590277171>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zHuman": {
+    "id": 1504085941210316942,
+    "name": "zHuman",
+    "animated": false,
+    "usage": "<:zHuman:1504085941210316942>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zSafe": {
+    "id": 1504085959577440488,
+    "name": "zSafe",
+    "animated": false,
+    "usage": "<:zSafe:1504085959577440488>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zban": {
+    "id": 1504085978736754889,
+    "name": "zban",
+    "animated": false,
+    "usage": "<:zban:1504085978736754889>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zbot": {
+    "id": 1504085994847211661,
+    "name": "zbot",
+    "animated": false,
+    "usage": "<:zbot:1504085994847211661>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zcast": {
+    "id": 1504086037230653480,
+    "name": "zcast",
+    "animated": false,
+    "usage": "<:zcast:1504086037230653480>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zcircle": {
+    "id": 1504086053496164382,
+    "name": "zcircle",
+    "animated": false,
+    "usage": "<:zcircle:1504086053496164382>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zcross1": {
+    "id": 1504086372800135319,
+    "name": "zcross1",
+    "animated": false,
+    "usage": "<:zcross1:1504086372800135319>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zgift": {
+    "id": 1504086679017885799,
+    "name": "zgift",
+    "animated": true,
+    "usage": "<a:zgift:1504086679017885799>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zmodule": {
+    "id": 1504087758585593898,
+    "name": "zmodule",
+    "animated": false,
+    "usage": "<:zmodule:1504087758585593898>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zmusic": {
+    "id": 1504087777778602004,
+    "name": "zmusic",
+    "animated": false,
+    "usage": "<:zmusic:1504087777778602004>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zmusicpause": {
+    "id": 1504087798767157268,
+    "name": "zmusicpause",
+    "animated": false,
+    "usage": "<:zmusicpause:1504087798767157268>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zmute": {
+    "id": 1504087819264594001,
+    "name": "zmute",
+    "animated": false,
+    "usage": "<:zmute:1504087819264594001>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zpeople": {
+    "id": 1504087839472750592,
+    "name": "zpeople",
+    "animated": false,
+    "usage": "<:zpeople:1504087839472750592>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zplus": {
+    "id": 1504087855738261645,
+    "name": "zplus",
+    "animated": false,
+    "usage": "<:zplus:1504087855738261645>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zrocke": {
+    "id": 1504087889493884948,
+    "name": "zrocke",
+    "animated": false,
+    "usage": "<:zrocke:1504087889493884948>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zseed": {
+    "id": 1504087916240965663,
+    "name": "zseed",
+    "animated": false,
+    "usage": "<:zseed:1504087916240965663>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zsettings": {
+    "id": 1504087967688556584,
+    "name": "zsettings",
+    "animated": false,
+    "usage": "<:zsettings:1504087967688556584>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zsowrd": {
+    "id": 1504087985665343538,
+    "name": "zsowrd",
+    "animated": false,
+    "usage": "<:zsowrd:1504087985665343538>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "ztad": {
+    "id": 1504088004875260196,
+    "name": "ztad",
+    "animated": false,
+    "usage": "<:ztad:1504088004875260196>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "ztick": {
+    "id": 1504088022642200606,
+    "name": "ztick",
+    "animated": false,
+    "usage": "<:ztick:1504088022642200606>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zticket": {
+    "id": 1504088039163564042,
+    "name": "zticket",
+    "animated": false,
+    "usage": "<:zticket:1504088039163564042>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zunmute": {
+    "id": 1504088063771410523,
+    "name": "zunmute",
+    "animated": false,
+    "usage": "<:zunmute:1504088063771410523>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  },
+  "zwifi": {
+    "id": 1504088198668750938,
+    "name": "zwifi",
+    "animated": false,
+    "usage": "<:zwifi:1504088198668750938>",
+    "server": "\ud835\ude70\ud835\ude88\ud835\ude84\ud835\ude82\ud835\ude77<3's server | emoji 1",
+    "server_id": 1504060120492146708
+  }
+}
