@@ -457,6 +457,7 @@ title DARK INFINITE Bot [%%COMPUTERNAME%%]
 cd /d "$BotDir"
 set "TOKEN=$BotToken"
 set "GROQ_API_KEY=$GroqKey"
+set "BOT_SOURCE=PC-%COMPUTERNAME%"
 
 :: ── Check if Replit bot is already online ─────────────────────────────────
 :check_replit
@@ -488,6 +489,9 @@ powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File "$updater"
 
 :: Register this PC in dashboard + Start heartbeat (keeps lock alive + updates dashboard)
 start "" /b powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "while(`$true){try{Invoke-WebRequest '$BotUrl/pc-lock/heartbeat?id=$pcId' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{};try{Invoke-WebRequest '$BotUrl/pc-lock/register?id=$pcId&status=active' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{};Start-Sleep 60}"
+
+:: Auto-update background loop — checks for new Replit version every 5 minutes while bot is running
+start "" /b powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "`$BotUrl='$BotUrl';`$BotDir='$BotDir';`$vf='`$BotDir\local_version.txt';while(`$true){Start-Sleep 300;try{`$ver=(Invoke-WebRequest `"`$BotUrl/version`" -UseBasicParsing -TimeoutSec 8).Content.Trim();`$old=if(Test-Path `$vf){(Get-Content `$vf -Raw).Trim()}else{''}; if(`$ver -ne `$old){Write-Host '[AutoUpdate] New version found! Updating...';`$z=`"`$env:TEMP\darkbot_upd.zip`";Invoke-WebRequest `"`$BotUrl/download/bot.zip`" -OutFile `$z -UseBasicParsing;Expand-Archive `$z -DestinationPath `$BotDir -Force;Remove-Item `$z -Force;`$ver|Set-Content `$vf;Write-Host '[AutoUpdate] Done! Bot will restart on next cycle.';Stop-Process -Name python -Force -ErrorAction SilentlyContinue}}catch{}}"
 
 $python CodeX.py
 
@@ -800,6 +804,28 @@ async def on_ready():
         print(e)
     client.loop.create_task(update_stats())
     client.loop.create_task(_catch_up_offline_dms())
+
+    # ── Send startup log to configured channel ─────────────────────────────
+    async def _send_startup_log():
+        await client.wait_until_ready()
+        try:
+            from cogs.commands.botlogs import send_bot_log
+            source = os.environ.get('BOT_SOURCE', 'Replit ☁️')
+            import platform
+            await send_bot_log(
+                client,
+                "🟢 Bot Online!",
+                f"**DARK INFINITE** bot start ho gaya hai!",
+                color=discord.Color.green(),
+                fields=[
+                    ("🖥️ Running On", f"`{source}`", True),
+                    ("🌐 Guilds", str(len(client.guilds)), True),
+                    ("⚡ Commands", str(len(list(client.commands))), True),
+                ]
+            )
+        except Exception as _e:
+            print(f"[StartupLog] {_e}")
+    client.loop.create_task(_send_startup_log())
 
     # ── Set bot avatar on startup ──────────────────────────────────────────
     try:
