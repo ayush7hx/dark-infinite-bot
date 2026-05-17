@@ -461,6 +461,8 @@ set "GROQ_API_KEY=$GroqKey"
 :: ── Check if Replit bot is already online ─────────────────────────────────
 :check_replit
 echo [%%TIME%%] Checking Replit status...
+:: Always register this PC so it shows on dashboard (standby status)
+powershell -Command "try{Invoke-WebRequest '$BotUrl/pc-lock/register?id=$pcId&status=standby' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{}"
 powershell -Command "try{`$r=(Invoke-WebRequest '$BotUrl/api/stats' -UseBasicParsing -TimeoutSec 8).Content;if(`$r -match 'commands'){exit 0}else{exit 1}}catch{exit 1}"
 if %errorlevel%==0 (
     echo [%%TIME%%] Replit is ONLINE — standby mode. Checking again in 60s...
