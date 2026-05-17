@@ -1,4 +1,5 @@
 discord.py>=2.3.2
+google-generativeai
 discord-ext-menus
 pytz
 aiofiles

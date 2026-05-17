@@ -38,3 +38,4 @@ externalPort = 80
 [userenv.shared]
 TOKEN = "MTUwMzY1MTUyMzEyMzYxMzgxOA.GxXbBw.u3gPQVGM7l4ZmbgsBjokFk4zdzol35-1-3XxLc"
 GROQ_API_KEY = "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"
+GOOGLE_API_KEY = "AIzaSyBppGDrE93llhmaVym6_NmsPAvU3yCgUkg"

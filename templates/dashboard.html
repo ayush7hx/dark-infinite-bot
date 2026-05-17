@@ -369,6 +369,13 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
       </div>
 
       <div>
+        <div class="section-title">PC Instances 🖥️</div>
+        <div id="pcStatusGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:6px">
+          <div class="empty-state"><div class="spin"></div></div>
+        </div>
+      </div>
+
+      <div>
         <div class="section-title">Active Servers</div>
         <div class="server-grid" id="dashServers">
           <div class="empty-state"><div class="spin"></div></div>
@@ -705,10 +712,44 @@ function keepAlive(){
 }
 setInterval(keepAlive, 120000);
 
+// ── PC STATUS ──
+async function loadPcStatus(){
+  try{
+    const pcs = await fetch('/api/pc-status').then(r=>r.json());
+    const el = document.getElementById('pcStatusGrid');
+    if(!pcs||!pcs.length){
+      el.innerHTML='<div class="empty-state"><div class="empty-icon">🖥️</div><div class="empty-text">No PCs connected</div><div class="empty-sub">Run setup.ps1 on your PCs</div></div>';
+      return;
+    }
+    el.innerHTML = pcs.map(pc=>{
+      const online = pc.status==='online';
+      const active = pc.is_active;
+      const age = pc.last_seen;
+      const ageStr = age < 60 ? age+'s ago' : Math.floor(age/60)+'m ago';
+      const dot = active ? '#3dd68c' : online ? '#5b8cff' : '#555570';
+      const badge = active ? '🟢 RUNNING BOT' : online ? '🔵 Standby' : '⚫ Offline';
+      const badgeBg = active ? 'rgba(61,214,140,.12)' : online ? 'rgba(91,140,255,.1)' : 'rgba(85,85,112,.1)';
+      const badgeColor = active ? '#3dd68c' : online ? '#5b8cff' : '#555570';
+      return `<div class="stat-card" style="cursor:default">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="width:10px;height:10px;border-radius:50%;background:${dot};flex-shrink:0;${active?'box-shadow:0 0 8px '+dot:''}"></div>
+          <div style="font-size:13px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1">${esc(pc.name)}</div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:${badgeBg};color:${badgeColor};border:1px solid ${badgeColor}33">${badge}</span>
+          <span style="font-size:10px;color:var(--text3)">${online?ageStr:'last: '+ageStr}</span>
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e){}
+}
+
 // ── BOOT ──
 loadStats();
+loadPcStatus();
 setInterval(loadStats, 8000);
 setInterval(loadDMs, 5000);
+setInterval(loadPcStatus, 15000);
 
 // ── SERVICE WORKER ──
 if('serviceWorker' in navigator){

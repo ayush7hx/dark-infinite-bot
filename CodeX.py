@@ -273,6 +273,37 @@ def pc_lock_status():
         return Response(f"LOCKED:{_pc_lock['holder']}", mimetype='text/plain')
     return Response("FREE", mimetype='text/plain')
 
+# ── PC instances registry ─────────────────────────────────────────────────────
+_pc_registry: dict = {}  # {pc_id: {"last_seen": float, "status": str}}
+
+@app.route('/pc-lock/register')
+def pc_lock_register():
+    from flask import request, Response
+    pc_id = request.args.get('id', 'unknown')
+    status = request.args.get('status', 'active')
+    _pc_registry[pc_id] = {"last_seen": _time.time(), "status": status, "name": pc_id}
+    return Response("OK", mimetype='text/plain')
+
+@app.route('/api/pc-status')
+def api_pc_status():
+    from flask import jsonify
+    now = _time.time()
+    result = []
+    for pc_id, info in list(_pc_registry.items()):
+        last_seen = info["last_seen"]
+        age = now - last_seen
+        online = age < 180  # 3 min timeout
+        result.append({
+            "id": pc_id,
+            "name": pc_id,
+            "status": "online" if online else "offline",
+            "last_seen": int(age),
+            "is_active": _pc_lock["holder"] == pc_id and _pc_lock["expires"] > now
+        })
+    # Sort: active first, then online, then offline
+    result.sort(key=lambda x: (0 if x["is_active"] else 1 if x["status"]=="online" else 2))
+    return jsonify(result)
+
 @app.route('/version')
 def bot_version():
     import os, hashlib
@@ -453,8 +484,8 @@ goto check_replit
 :start_bot
 powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File "$updater"
 
-:: Start heartbeat in background (keeps lock alive)
-start "" /b powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "while(`$true){try{Invoke-WebRequest '$BotUrl/pc-lock/heartbeat?id=$pcId' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{};Start-Sleep 60}"
+:: Register this PC in dashboard + Start heartbeat (keeps lock alive + updates dashboard)
+start "" /b powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "while(`$true){try{Invoke-WebRequest '$BotUrl/pc-lock/heartbeat?id=$pcId' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{};try{Invoke-WebRequest '$BotUrl/pc-lock/register?id=$pcId&status=active' -UseBasicParsing -TimeoutSec 5|Out-Null}catch{};Start-Sleep 60}"
 
 $python CodeX.py
 
