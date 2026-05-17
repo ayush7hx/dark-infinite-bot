@@ -42,6 +42,37 @@ import asyncio
 import threading
 import traceback
 from threading import Thread
+import ctypes.util
+
+# ─── Load libopus for voice support ───────────────────────────────────────────
+def _load_opus():
+    import discord as _discord
+    if _discord.opus.is_loaded():
+        return
+    _opus_paths = [
+        '/nix/store/0py9xncsn0s6vqxhvqblvhs2cqbb30s8-libopus-1.5.2/lib/libopus.so.0',
+        'libopus.so.0',
+        'libopus.so',
+    ]
+    for _path in _opus_paths:
+        try:
+            _discord.opus.load_opus(_path)
+            print(f"[Voice] Loaded opus from {_path}")
+            return
+        except Exception:
+            continue
+    _sys_opus = ctypes.util.find_library('opus')
+    if _sys_opus:
+        try:
+            _discord.opus.load_opus(_sys_opus)
+            print(f"[Voice] Loaded opus: {_sys_opus}")
+            return
+        except Exception:
+            pass
+    print("[Voice] WARNING: libopus could not be loaded — voice features disabled.")
+
+_load_opus()
+# ──────────────────────────────────────────────────────────────────────────────
 from datetime import datetime
 import random
 import time
