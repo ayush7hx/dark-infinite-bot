@@ -2,6 +2,7 @@ discord.py>=2.3.2
 discord-ext-menus
 pytz
 aiofiles
+PyNaCl
 aiohttp>=3.9.0
 aiosqlite>=0.19.0
 jishaku>=2.5.0

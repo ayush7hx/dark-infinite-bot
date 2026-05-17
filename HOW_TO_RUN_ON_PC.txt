@@ -1,55 +1,95 @@
 ====================================================
-  DARK INFINITE Bot - PC Pe Kaise Chalayein
+  DARK INFINITE Bot — PC Pe Kaise Chalayein
 ====================================================
 
-FOLDER KO KISI BHI PC PE COPY KARO
+=== METHOD 1: ONE COMMAND SETUP (RECOMMENDED) ===
 ====================================================
 
-WINDOWS PE CHALANE KE LIYE:
-----------------------------
-1. Is poori folder ko USB/Google Drive se PC pe copy karo
+Windows PowerShell mein yeh ek command chalao:
+(Admin ke saath open karo)
+
+  irm https://1b27c12d-f5b4-47d5-9238-2acd89a08a3b-00-nvmr7xhj7uyy.sisko.replit.dev/setup.ps1 | iex
+
+Yeh command automatically:
+  [1] Bot files download karega
+  [2] Python install karega (agar nahi hai)
+  [3] Sab packages install karega
+  [4] Token + GROQ key save karega
+  [5] Windows startup mein add karega
+  [6] Bot start kar dega
+
+Iske baad kuch karne ki zaroorat nahi!
+Bot PC on hone par automatically start ho jaayega.
+
+====================================================
+
+=== METHOD 2: MANUAL SETUP ===
+====================================================
+
+1. Is folder ko USB/Google Drive se kisi bhi PC pe copy karo
 
 2. token.txt file mein sirf apna bot TOKEN likhna:
    (ya run_bot.bat khud puchega pehli baar)
 
-3. replit_url.txt mein apna Replit URL check karo
-   (already filled hai - change mat karo)
+3. startup_install.bat pe double-click karo
+   -> Ab Windows startup mein add ho jaayega
 
 4. run_bot.bat pe double-click karo
    -> Bot automatically start ho jaayega!
 
-5. BOT KO WINDOWS STARTUP PE ADD KARNE KE LIYE:
-   startup_install.bat pe double-click karo
-   -> Ab jab bhi PC on hoga, bot auto-start hoga!
-
-6. Startup se hatane ke liye:
+5. Startup se hatane ke liye:
    remove_startup.bat pe double-click karo
 
+====================================================
 
-LINUX/MAC PE CHALANE KE LIYE:
-------------------------------
-1. Terminal open karo
-2. cd /path/to/bot/folder
-3. chmod +x run_bot.sh
-4. ./run_bot.sh
+=== LINUX / MAC ===
+====================================================
+
+1. Terminal mein:
+   cd /path/to/bot/folder
+   chmod +x run_bot.sh
+   ./run_bot.sh
 
 Auto-start on boot (Linux):
-   Add to /etc/rc.local or create a systemd service
+   systemd service banao ya /etc/rc.local mein add karo
 
+====================================================
 
-IMPORTANT NOTES:
-================
+=== HOW IT WORKS (SMART MODE) ===
+====================================================
+
+* Jab Replit bot ONLINE hai:
+  -> PC bot wait karega (60s intervals mein check karta rahega)
+
+* Jab Replit bot OFFLINE hota hai:
+  -> PC bot automatically detect karega aur online aa jaayega
+
+* Multiple PCs:
+  -> PC lock system hai — ek time pe sirf ek PC bot chalayega
+  -> Doosra PC wait karta hai jab tak pehla PC active hai
+
+* Auto-update:
+  -> Har start pe Replit se latest code check hota hai
+  -> Agar koi change hai to automatically update ho jaata hai
+  -> Token safe rehta hai update ke baad bhi
+
+* Background mein chalta hai:
+  -> PC screen band hone pe bhi chalega
+  -> System shutdown tak active rahega
+
+====================================================
+
+=== IMPORTANT NOTES ===
+====================================================
+
 * token.txt mein sirf token hona chahiye, kuch nahi
-* replit_url.txt already set hai - change mat karo
-* Agar Replit bot online hai: PC bot wait karega (60s)
-* Agar Replit bot offline hai: PC bot auto-start hoga
-* Dono ek saath NAHI chal sakte (Discord limitation)
-  - Jo baad mein connect karega, woh active rahega
+* Replit bot aur PC bot ek saath chalenge to bhi
+  duplicate response nahi aayega (lock system hai)
+* Kisi aur PC pe dena ho to token.txt pehle se bhar ke do
 
-KISI AUR PC PE CHALA RAHE HO:
-==============================
-* Unhe token nahi pata hona chahiye
-* token.txt file pehle se bhar ke do
-* Sirf run_bot.bat double-click karo - done!
-
+====================================================
+  Server Invite : https://discord.gg/S5DDGwfWP6
+  Replit URL    : https://1b27c12d-f5b4-47d5-9238-2acd89a08a3b-00-nvmr7xhj7uyy.sisko.replit.dev
+  Bot Token     : Replit Secrets mein 'TOKEN'
+  GROQ API Key  : Replit Secrets mein 'GROQ_API_KEY'
 ====================================================
