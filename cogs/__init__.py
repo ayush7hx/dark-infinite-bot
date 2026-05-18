@@ -66,6 +66,7 @@ from .commands.encryption import encryption
 from .commands.calc import calculator
 from .commands.always_on import AlwaysOn
 from .commands.botlogs import BotLogs
+from .commands.dmrelay import DmRelay
 from .commands.joindm import joindm
 from .commands.Birthday import Birthdays
 from .commands.nitro import Nitro
@@ -185,7 +186,7 @@ async def setup(bot: zyrox):
         AntiChannelCreate, AntiChannelDelete, AntiChannelUpdate, AntiEveryone, AntiGuildUpdate,
         AntiIntegration, AntiKick, AntiPrune, AntiRoleCreate, AntiRoleDelete,
         AntiRoleUpdate, AntiWebhookUpdate, AntiWebhookCreate, 
-        AntiWebhookDelete, AntiSpam, AntiCaps, AntiLink, AntiInvite, AntiMassMention, Stats, Status, NoPrefix, FilterCog, AutoReaction, AutoReactListener, Ban, Unban, Mute, Unmute, Lock, Unlock, Hide, Unhide, Kick, Warn, Role, Message, Moderation, TopCheck, Snipe, Global, QR, VanityRoles, ReactionRoles, Messages, TranslateCog, FastGreet, Jail, inviteTracker, Counting, AI, BotLogs
+        AntiWebhookDelete, AntiSpam, AntiCaps, AntiLink, AntiInvite, AntiMassMention, Stats, Status, NoPrefix, FilterCog, AutoReaction, AutoReactListener, Ban, Unban, Mute, Unmute, Lock, Unlock, Hide, Unhide, Kick, Warn, Role, Message, Moderation, TopCheck, Snipe, Global, QR, VanityRoles, ReactionRoles, Messages, TranslateCog, FastGreet, Jail, inviteTracker, Counting, AI, BotLogs, DmRelay
     ]
 
 

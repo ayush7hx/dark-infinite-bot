@@ -90,8 +90,8 @@ from utils.Tools import *
 from utils.config import *
 
 # ─── FLASK SETUP (all routes defined before server starts) ────────────────────
-from flask import Flask, render_template, jsonify, request as flask_request
-app = Flask(__name__, template_folder='templates', static_folder='static')
+from flask import Flask, jsonify, request as flask_request, Response as _FlaskResponse
+app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = 'darkinfinite_dashboard_2025'
 
 def _bot_ready():
@@ -114,7 +114,7 @@ def add_headers(response):
 
 @app.route('/')
 def home():
-    return render_template('dashboard.html')
+    return _FlaskResponse("DARK INFINITE Bot is running ✅", mimetype='text/plain')
 
 @app.route('/api/stats')
 def api_stats():
@@ -142,83 +142,6 @@ def api_stats():
         'servers_list': servers_list
     })
 
-@app.route('/api/servers')
-def api_servers():
-    if not _bot_ready():
-        return jsonify([])
-    c = globals()['client']
-    result = []
-    for g in c.guilds:
-        icon_url = str(g.icon.url) if g.icon else None
-        result.append({'id': str(g.id), 'name': g.name, 'members': g.member_count or 0, 'icon': icon_url})
-    return jsonify(result)
-
-@app.route('/api/dms')
-def api_dms():
-    _dm_lock = globals().get('dm_lock')
-    _dm_store = globals().get('dm_store', {})
-    if not _dm_lock:
-        return jsonify([])
-    with _dm_lock:
-        result = []
-        for uid, data in _dm_store.items():
-            msgs      = data['messages']
-            last_msg  = msgs[-1]['content'] if msgs else ''
-            last_time = msgs[-1]['time'] if msgs else ''
-            result.append({
-                'user_id':      uid,
-                'username':     data['user']['username'],
-                'avatar':       data['user']['avatar'],
-                'last_message': last_msg[:60],
-                'last_time':    last_time
-            })
-    return jsonify(result)
-
-@app.route('/api/dms/<user_id>')
-def api_dm_conversation(user_id):
-    _dm_lock = globals().get('dm_lock')
-    _dm_store = globals().get('dm_store', {})
-    if not _dm_lock:
-        return jsonify([])
-    with _dm_lock:
-        data = _dm_store.get(user_id, {})
-        return jsonify(data.get('messages', []))
-
-@app.route('/api/send_dm', methods=['POST', 'OPTIONS'])
-def api_send_dm():
-    if flask_request.method == 'OPTIONS':
-        return jsonify({'status': 'ok'})
-    try:
-        if not _bot_ready():
-            return jsonify({'status': 'error', 'error': 'Bot not ready'}), 503
-        c         = globals()['client']
-        _dm_lock  = globals().get('dm_lock')
-        _dm_store = globals().get('dm_store', {})
-        body      = flask_request.get_json(force=True, silent=True) or {}
-        user_id   = int(body.get('user_id', 0))
-        content   = str(body.get('content', '')).strip()
-        if not content or not user_id:
-            return jsonify({'status': 'error', 'error': 'Missing user_id or content'}), 400
-
-        async def do_send():
-            user = await c.fetch_user(user_id)
-            await user.send(content)
-
-        future = asyncio.run_coroutine_threadsafe(do_send(), c.loop)
-        future.result(timeout=15)
-
-        uid      = str(user_id)
-        msg_time = datetime.now().strftime('%H:%M')
-        msg_obj  = {'content': content, 'direction': 'sent', 'time': msg_time, 'username': 'DARK INFINITE', 'avatar': None}
-        if _dm_lock:
-            with _dm_lock:
-                user_info = (_dm_store.get(uid) or {}).get('user', {'id': uid, 'username': 'Unknown', 'avatar': None})
-        _store_dm_fn = globals().get('_store_dm')
-        if _store_dm_fn:
-            _store_dm_fn(uid, user_info, msg_obj)
-        return jsonify({'status': 'ok'})
-    except Exception as e:
-        return jsonify({'status': 'error', 'error': str(e)}), 500
 
 @app.route('/manifest.json')
 def pwa_manifest():
@@ -806,27 +729,6 @@ async def on_ready():
     client.loop.create_task(update_stats())
     client.loop.create_task(_catch_up_offline_dms())
 
-    # ── Send startup log to configured channel ─────────────────────────────
-    async def _send_startup_log():
-        await client.wait_until_ready()
-        try:
-            from cogs.commands.botlogs import send_bot_log
-            source = os.environ.get('BOT_SOURCE', 'Replit ☁️')
-            import platform
-            await send_bot_log(
-                client,
-                "🟢 Bot Online!",
-                f"**DARK INFINITE** bot start ho gaya hai!",
-                color=discord.Color.green(),
-                fields=[
-                    ("🖥️ Running On", f"`{source}`", True),
-                    ("🌐 Guilds", str(len(client.guilds)), True),
-                    ("⚡ Commands", str(len(list(client.commands))), True),
-                ]
-            )
-        except Exception as _e:
-            print(f"[StartupLog] {_e}")
-    client.loop.create_task(_send_startup_log())
 
     # ── Set bot avatar on startup ──────────────────────────────────────────
     try:
