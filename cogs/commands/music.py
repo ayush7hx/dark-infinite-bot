@@ -305,7 +305,7 @@ class Music(commands.Cog):
                 player = vc
                 break
 
-        if player and player.playing and len(player.channel.members) == 1:
+        if player and player.is_playing() and len(player.channel.members) == 1:
             await self.inactivity_timer(guild)
 
     async def inactivity_timer(self, guild):
