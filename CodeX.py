@@ -545,7 +545,8 @@ Start-Process cmd.exe -ArgumentList "/k `"$bat`"" -WindowStyle Normal
 def _run_flask():
     import logging
     logging.getLogger('werkzeug').setLevel(logging.WARNING)
-    app.run(host='0.0.0.0', port=5000, threaded=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, threaded=True)
 
 Thread(target=_run_flask, daemon=True).start()
 # ──────────────────────────────────────────────────────────────────────────────
