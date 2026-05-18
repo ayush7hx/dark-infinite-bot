@@ -1,2 +1,60 @@
 
 .git.backup.*
+
+# ── Python ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual envs & Replit packages ──────────────────
+.pythonlibs/
+venv/
+env/
+.venv/
+
+# ── Cache ────────────────────────────────────────────
+.cache/
+*.cache
+.pytest_cache/
+
+# ── Replit internal ──────────────────────────────────
+.local/
+.agents/
+.git.backup*/
+
+# ── Secrets & tokens ─────────────────────────────────
+.env
+secrets.json
+
+# ── Databases (regenerated automatically) ────────────
+*.db
+*.sqlite
+*.sqlite3
+db/
+
+# ── Logs ─────────────────────────────────────────────
+*.log
+logs/
+
+# ── Bot extracted/temp files ──────────────────────────
+bot_extracted/
+*.zip
+*.tar.gz
+
+# ── OS files ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Runtime-generated files ───────────────────────────
+data/
+attached_assets/
+replit_url.txt
+local_version.txt
+bot_version.txt
